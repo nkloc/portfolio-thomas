@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>Hello ! <br> I'm Thomas.</h2>
+        <h2 style="margin-top: 3vh">Hello ! <br> I'm Thomas.</h2>
         <img class="image-scroll" src="../assets/effet-scroll.png" alt="">
         <h4>Digital management student <br> & <br> UI Designer Free-lance</h4>
         <div class="links">
@@ -44,7 +44,7 @@ section
     align-items center
     background white
     color $gray-color
-    padding 5vh
+    padding 0 5vh
     @media tablet 
       padding 0 2vh
     .image-scroll
@@ -77,7 +77,8 @@ section
       margin 10vh 0 3vh 0
       @media tablet
         justify-content space-around
-        margin 5vh 0 2vh 0
+        margin 5vh 0 2vh 
+        width 90vw
       img 
         height 150px
         margin 0 5vh
@@ -110,6 +111,7 @@ section
       @media tablet
         justify-content space-around
         margin 5vh 0 2vh 0
+        width 90vw
     p
       font-weight regular
       font-size 20px
