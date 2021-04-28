@@ -8,9 +8,9 @@
             <i @click.prevent="showMenu()" v-if="windowWidth < 749 && burgerMenuActive" class="fas fa-times burger"></i>
             <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
                 <ul> 
-                    <li><router-link to="/projects">Projects</router-link></li>
-                    <li><router-link to="/about">About me</router-link></li>
-                    <li><router-link to="/contact">Contact</router-link></li>
+                    <li><router-link @click.prevent="showMenu()" to="/projects">Projects</router-link></li>
+                    <li><router-link @click.prevent="showMenu()" to="/about">About me</router-link></li>
+                    <li><router-link @click.prevent="showMenu()" to="/contact">Contact</router-link></li>
                 </ul>
             </div>
 
