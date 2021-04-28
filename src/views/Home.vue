@@ -17,8 +17,8 @@
         </div>
         <h4>Latest Project</h4>
         <div class="last-project">
-          <a href=""><img src="../assets/Cuure.svg" alt="Projet Cuure"></a>
-          <a href="/projects">All projects</a>
+          <router-link to="/projects/cuure"><img src="../assets/Cuure.svg" alt="Projet Cuure"></router-link>
+          <router-link to="/projects">All Projects</router-link>
         </div>
         <h4>Soft Skills & <br> Experiences</h4>
         <div class="container-double">
@@ -123,8 +123,8 @@ section
 </style>
 
 <script>
-import Double from './templates/Double.vue'
-import Exp from './templates/Exp.vue'
+import Double from '../components/templates/Double.vue'
+import Exp from '../components/templates/Exp.vue'
 
 export default {
   components: {

@@ -1,16 +1,16 @@
 <template>
     <header :class="{ active: burgerMenuActive}">
         <div>
-            <img src="../assets/logo.svg" alt="Logo d'odissey sécurité privée">
+            <router-link to="/"> <img src="../assets/logo.svg" alt="Logo Thomas Chheang"></router-link>
         </div>
         <div>
             <i @click.prevent="showMenu()" v-if="windowWidth < 749 && !burgerMenuActive" class="fas fa-bars burger"></i>
             <i @click.prevent="showMenu()" v-if="windowWidth < 749 && burgerMenuActive" class="fas fa-times burger"></i>
             <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
                 <ul> 
-                    <li> <a href="">Projects</a></li>
-                    <li> <a href="">About me</a></li>
-                    <li> <a href="">Contact</a></li>
+                    <li><router-link to="/projects">Projects</router-link></li>
+                    <li><router-link to="/about">About me</router-link></li>
+                    <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
             </div>
 
