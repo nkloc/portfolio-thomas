@@ -5,7 +5,7 @@
         </div>
         <div>
             <i @click.prevent="showMenu()" v-if="windowWidth < 749 && !burgerMenuActive" class="fas fa-bars burger"></i>
-            <i @click.prevent="showMenu()" v-if="windowWidth < 749 && burgerMenuActive" class="fas fa-times burger"></i>
+            <i style="color: white" @click.prevent="showMenu()" v-if="windowWidth < 749 && burgerMenuActive" class="fas fa-times burger"></i>
             <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
                 <ul> 
                     <li v-if="this.$route.name != 'Projects'"><router-link to="/projects">Projects</router-link></li>
@@ -93,6 +93,7 @@ a
 .active 
     position fixed
     width calc(100% - 100px)
+    background $black-color
 </style>
 
 <script>
