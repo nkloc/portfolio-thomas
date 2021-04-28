@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
+import Project from '../views/Project.vue'
+
 
 
 Vue.use(VueRouter)
@@ -31,6 +33,25 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: Projects
+  },
+  {
+    path: '/project/cuure',
+    name: 'Project',
+    component: Project,
+    meta: { 
+      title: 'Cuure', 
+      titleProjet: "Le projet cuure...",
+      toolUsed: {
+        figma:{
+          descriptionProject: "Description de l'utilisation de l'outil au sein du poste"
+        },
+        illustrator:{
+          descriptionProject: "Description de l'utilisation de l'outil au sein du poste"
+        },
+      },
+      imgPath: 'cuure', 
+      imgNumber: 4,
+    },
   }
 ]
 
